@@ -22,11 +22,11 @@
                 <main role="main">
                     <section class="jumbotron text-center">
                     <div class="container">
-                        <h1 class="jumbotron-heading">Album example</h1>
+                        <h1 class="jumbotron-heading">142+张现场纸质面试题集合</h1>
                         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
                         <p>
-                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                        <a href="https://github.com/ifyouremember/Interview" class="btn btn-primary my-2">Github</a>
+                        <a href="https://github.com/Wscats" class="btn btn-secondary my-2">Author</a>
                         </p>
                     </div>
                     </section>
@@ -41,7 +41,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button @click="view(index)" type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button @click="view(index)" type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                     </div>
@@ -55,12 +55,12 @@
             `,
             created() {
                 for (let i = 1; i <= 142; i++) {
-                    this.imgs.push(`https://github.com/ifyouremember/Interview/blob/master/${i}.jpg`)
+                    this.imgs.push(`https://github.com/ifyouremember/Interview/blob/master/${i}.JPG`)
                 }
             },
             methods:{
                 view(index){
-                    window.open(); 
+                    window.open(`https://github.com/ifyouremember/Interview/blob/master/${i}.jpg`); 
                 }
             }
         })
