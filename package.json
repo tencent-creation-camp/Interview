@@ -1,0 +1,19 @@
+{
+  "name": "reky",
+  "version": "1.0.2",
+  "description": "[142+张现场纸质面试题集合](https://ifyouremember.github.io/Interview/web)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifyouremember/Interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifyouremember/Interview/issues"
+  },
+  "homepage": "https://github.com/ifyouremember/Interview#readme"
+}
