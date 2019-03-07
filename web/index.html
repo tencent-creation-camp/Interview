@@ -41,7 +41,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button @click="view(index)" type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button @click="view(index)" type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button @click="edit(index)" type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
                                     </div>
@@ -55,12 +55,15 @@
             `,
             created() {
                 for (let i = 1; i <= 142; i++) {
-                    this.imgs.push(`https://github.com/ifyouremember/Interview/blob/master/${i}.JPG`)
+                    this.imgs.push(`https://ifyouremember.github.io/Interview/${i}.JPG`)
                 }
             },
-            methods:{
-                view(index){
-                    window.open(`https://github.com/ifyouremember/Interview/blob/master/${i}.jpg`); 
+            methods: {
+                view(index) {
+                    window.open(`https://github.com/ifyouremember/Interview/blob/master/${index}.JPG`);
+                },
+                edit() {
+                    window.open(`https://ifyouremember.github.io/Interview/${index}.JPG`);
                 }
             }
         })
