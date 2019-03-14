@@ -55,18 +55,18 @@
             `,
             created() {
                 for (let i = 1; i <= 142; i++) {
-                    this.imgs.push(`https://ifyouremember.github.io/Interview/section1/${i}.JPG`)
+                    this.imgs.push(`https://ifyouremember.github.io/Interview/section1/${i}.jpg`)
                 }
             },
             methods: {
                 view(index) {
-                    window.open(`https://ifyouremember.github.io/Interview/section1/${index}.JPG`);
+                    window.open(`https://ifyouremember.github.io/Interview/section1/${index}.jpg`);
                 },
                 edit(index) {
                     window.open(`https://github.com/ifyouremember/Interview/blob/master/section1/${index}.JPG`);
                 },
                 fixUrl(e, index) {
-                    e.target.src = `https://ifyouremember.github.io/Interview/section1/${index}.jpg`
+                    e.target.src = `https://ifyouremember.github.io/Interview/section1/${index}.JPG`
                 }
             }
         })
